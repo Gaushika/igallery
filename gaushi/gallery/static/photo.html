@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multiple Images Enlarge on Click</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1 align="center"  >Gaushika RR (25017292)</h1>
+  <div class="image-container">
+    <img class="clickable-image" src="i1.png" alt="Image 1" />
+    <img class="clickable-image" src="i2.png" alt="Image 2" />
+    <img class="clickable-image" src="i3.png" alt="Image 3" />
+    <img class="clickable-image" src="i4.png" alt="Image 4" />
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.toggle('enlarged');
+      });
+    });
+  </script>
+
+</body>
+</html>

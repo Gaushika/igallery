@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(243, 117, 155);
+}
+.image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 10px;              
+  padding: 20px 0;
+}
+
+.clickable-image {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+.image-container {
+  gap: 10px;
+  padding: 20px 0;
+  justify-content: center; 
+}
+
+.clickable-image {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.clickable-image:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+.clickable-image.enlarged {
+  transform: scale(2);
+  z-index: 10;
+}
+}
+
+.clickable-image:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+.clickable-image.enlarged {
+  transform: scale(2);
+  z-index: 10;
+}
